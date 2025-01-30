@@ -1,0 +1,823 @@
+<div class="w-full md:w-2/3">
+  <form
+    action="#"
+    data-dashlane-rid="b4cfb9e9610e0972"
+    data-dashlane-classification="identity"
+    data-dashlane-captcha="true"
+  >
+    <div id="f_founders" class="mb-16">
+      <div
+        class="mb-10 border border-l-0 border-r-0 border-t-0 border-solid border-gray-300 text-[24px] font-bold tracking-tight"
+      >
+        Founders
+      </div>
+      <div class="mb-6">
+        <div>
+          <div
+            class="rounded-xl border border-solid border-gray-200 bg-white p-6"
+          >
+            <div class="flex items-center justify-between">
+              <span class="flex items-center gap-6"
+                ><h2 class="text-[18px] font-bold">parsa homayouni</h2>
+                <span
+                  class="bg-pink text-negative flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold"
+                  ><span class="material-symbols-outlined text-md">error</span>
+                  Profile incomplete</span
+                ></span
+              ><a
+                href="/bio/edit"
+                class="orange-button-outlined !hover:bg-negative-100 !hover:text-negative flex items-center gap-3"
+                >Complete my profile<span
+                  class="material-icons-outlined !p-0 text-sm"
+                  >arrow_forward</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="orange-button"
+          style="margin-top: 20px; margin-bottom: 20px"
+        >
+          + Add a co-founder
+        </button>
+      </div>
+      <div id="others2" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="others2"
+          ><span
+            >Who writes code, or does other technical work on your product? Was
+            any of it done by a non-founder? Please explain.</span
+          ></label
+        ><textarea
+          name="others2"
+          class="w-full"
+          data-dashlane-rid="dba1db6984796ed5"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+      <div id="cofounder" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="cofounder"
+          ><span>Are you looking for a cofounder?</span></label
+        ><textarea
+          name="cofounder"
+          class="w-full"
+          data-dashlane-rid="5ba20444ef60e5a6"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+    </div>
+    <div id="f_founder_video" class="mb-16">
+      <div
+        class="mb-10 border border-l-0 border-r-0 border-t-0 border-solid border-gray-300 text-[24px] font-bold tracking-tight"
+      >
+        Founder Video
+      </div>
+      <div id="videoS3Key" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class="mb-0.5" for="videoS3Key"
+          ><span
+            >Please record a one minute video introducing the founder(s).</span
+          ><span class="text-negative">*</span></label
+        >
+        <p class="!mb-[10px]">
+          Make sure the file does not exceed 100 MB. Read more about the video
+          <a
+            href="https://www.ycombinator.com/video"
+            target="_blank"
+            rel="noopener noreferrer"
+            >here</a
+          >.
+        </p>
+        <div class="video-form" id="video-form" data-video-saved="false">
+          <div class="flex flex-col items-start gap-4">
+            <div
+              class="flex h-[150px] w-[400px] justify-stretch overflow-hidden"
+            >
+              <div class="uppy-Container">
+                <div class="uppy-Root" dir="ltr">
+                  <button
+                    type="button"
+                    class="uppy-u-reset uppy-DragDrop-container uppy-DragDrop--isDragDropSupported"
+                    style="width: 400px; height: 150px"
+                    data-dashlane-label="true"
+                    data-dashlane-rid="1cabb37604c703d0"
+                    data-dashlane-classification="other"
+                  >
+                    <input
+                      class="uppy-DragDrop-input"
+                      type="file"
+                      hidden=""
+                      accept="video/*"
+                    />
+                    <div class="uppy-DragDrop-inner">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        class="uppy-c-icon uppy-DragDrop-arrow"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11 10V0H5v10H2l6 6 6-6h-3zm0 0"
+                          fillRule="evenodd"
+                        ></path>
+                      </svg>
+                      <div class="uppy-DragDrop-label">
+                        Drop here or
+                        <span class="uppy-DragDrop-browse">browse</span>
+                      </div>
+                      <span class="uppy-DragDrop-note"></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-[400px] justify-stretch">
+              <div class="uppy-Container">
+                <div class="uppy-Root" dir="ltr">
+                  <div class="uppy-StatusBar is-waiting" aria-hidden="true">
+                    <div
+                      class="uppy-StatusBar-progress"
+                      role="progressbar"
+                      aria-label="0%"
+                      aria-valuetext="0%"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="0"
+                      style="width: 0%"
+                    ></div>
+                    <div class="uppy-StatusBar-actions"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="f_company" class="mb-16">
+      <div
+        class="mb-10 border border-l-0 border-r-0 border-t-0 border-solid border-gray-300 text-[24px] font-bold tracking-tight"
+      >
+        Company
+      </div>
+      <div id="name" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="name"
+          ><span>Company name</span><span class="text-negative">*</span></label
+        >
+        <div class="flex flex-row items-center gap-2">
+          <input
+            name="name"
+            type="text"
+            value=""
+            data-dashlane-rid="900caab3298f7f76"
+            data-dashlane-classification="company,company_name,name"
+            data-kwimpalastatus="alive"
+            data-kwimpalaid="1738270596897-0"
+          />
+        </div>
+      </div>
+      <div id="describe" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="describe"
+          ><span>Describe what your company does in 50 characters or less.</span
+          ><span class="text-negative">*</span></label
+        >
+        <div class="flex flex-row items-center gap-2">
+          <input
+            name="describe"
+            type="text"
+            value=""
+            data-dashlane-rid="1bd7583b28752aed"
+            data-dashlane-classification="company,company_name"
+            data-kwimpalastatus="alive"
+            data-kwimpalaid="1738270596897-1"
+          />
+        </div>
+      </div>
+      <div id="url" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="url"><span>Company URL, if any</span></label>
+        <div class="flex flex-row items-center gap-2">
+          <input
+            name="url"
+            type="text"
+            placeholder="https:// "
+            value=""
+            data-dashlane-rid="0fc315720bbc9bb3"
+            data-dashlane-classification="other"
+          />
+        </div>
+      </div>
+      <div id="demoS3Key" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class="mb-0.5" for="demoS3Key"
+          ><span>If you have a demo, attach it below.</span></label
+        >
+        <p class="!mb-[10px]">
+          Anything that shows us how the product works. Please limit to 3
+          minutes / 100 MB.
+        </p>
+        <div class="video-form" data-video-saved="false">
+          <div class="flex flex-col items-start gap-4">
+            <div
+              class="flex h-[150px] w-[400px] justify-stretch overflow-hidden"
+            >
+              <div class="uppy-Container">
+                <div class="uppy-Root" dir="ltr">
+                  <button
+                    type="button"
+                    class="uppy-u-reset uppy-DragDrop-container uppy-DragDrop--isDragDropSupported"
+                    style="width: 400px; height: 150px"
+                    data-dashlane-label="true"
+                    data-dashlane-rid="5173aed2c543ea13"
+                    data-dashlane-classification="other"
+                  >
+                    <input
+                      class="uppy-DragDrop-input"
+                      type="file"
+                      hidden=""
+                      accept="video/*"
+                    />
+                    <div class="uppy-DragDrop-inner">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        class="uppy-c-icon uppy-DragDrop-arrow"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11 10V0H5v10H2l6 6 6-6h-3zm0 0"
+                          fillRule="evenodd"
+                        ></path>
+                      </svg>
+                      <div class="uppy-DragDrop-label">
+                        Drop here or
+                        <span class="uppy-DragDrop-browse">browse</span>
+                      </div>
+                      <span class="uppy-DragDrop-note"></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-[400px] justify-stretch">
+              <div class="uppy-Container">
+                <div class="uppy-Root" dir="ltr">
+                  <div class="uppy-StatusBar is-waiting" aria-hidden="true">
+                    <div
+                      class="uppy-StatusBar-progress"
+                      role="progressbar"
+                      aria-label="0%"
+                      aria-valuetext="0%"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="0"
+                      style="width: 0%"
+                    ></div>
+                    <div class="uppy-StatusBar-actions"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="productLink" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="productLink"
+          ><span>Please provide a link to the product, if any.</span></label
+        >
+        <div class="flex flex-row items-center gap-2">
+          <input
+            name="productLink"
+            type="text"
+            placeholder="https://"
+            value=""
+            data-dashlane-rid="86ca9e251b42cc83"
+            data-dashlane-classification="other"
+          />
+        </div>
+      </div>
+      <div id="productCreds" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class="mb-0.5" for="productCreds"><span></span></label>
+        <p class="!mb-[10px]">
+          If login credentials are required for the link above, enter them here.
+        </p>
+        <div class="flex flex-row items-center gap-2">
+          <input
+            name="productCreds"
+            type="text"
+            placeholder="username / password"
+            value=""
+            data-dashlane-rid="03eafb9a165167c5"
+            data-dashlane-classification="other"
+          />
+        </div>
+      </div>
+      <div id="make" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="make"
+          ><span
+            >What is your company going to make? Please describe your product
+            and what it does or will do.</span
+          ></label
+        ><textarea
+          name="make"
+          class="w-full"
+          data-dashlane-rid="7806d0bfd2ef0832"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+      <div id="where" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class="mb-0.5" for="where"
+          ><span
+            >Where do you live now, and where would the company be based after
+            YC?</span
+          ></label
+        >
+        <p class="!mb-[10px]">
+          Use the format City A, Country A / City B, Country B
+        </p>
+        <div class="flex flex-row items-center gap-2">
+          <input
+            name="where"
+            type="text"
+            value=""
+            data-dashlane-rid="2515b870fbd7e5dd"
+            data-dashlane-classification="address,city,country"
+            data-kwimpalastatus="alive"
+            data-kwimpalaid="1738270596897-2"
+          />
+        </div>
+      </div>
+      <div id="wherewhy" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="wherewhy"
+          ><span>Explain your decision regarding location.</span></label
+        ><textarea
+          name="wherewhy"
+          class="w-full"
+          data-dashlane-rid="3ff456b454609fb1"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+    </div>
+    <div id="f_progress" class="mb-16">
+      <div
+        class="mb-10 border border-l-0 border-r-0 border-t-0 border-solid border-gray-300 text-[24px] font-bold tracking-tight"
+      >
+        Progress
+      </div>
+      <div id="howfar" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="howfar"><span>How far along are you?</span></label
+        ><textarea
+          name="howfar"
+          class="w-full"
+          data-dashlane-rid="ce3c5d3ba5ebcb2b"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+      <div id="worked" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="worked"
+          ><span
+            >How long have each of you been working on this? How much of that
+            has been full-time? Please explain.</span
+          ></label
+        ><textarea
+          name="worked"
+          class="w-full"
+          data-dashlane-rid="47ea0d55ee980df8"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+      <div id="techstack" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="techstack"
+          ><span
+            >What tech stack are you using, or planning to use, to build this
+            product?</span
+          ></label
+        ><textarea
+          name="techstack"
+          class="w-full"
+          data-dashlane-rid="faec50d90df5ce1f"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+      <div id="stage" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="stage"
+          ><span>Are people using your product?</span></label
+        >
+        <div id="stage" class="q mb-8 flex flex-1 flex-row items-center gap-4">
+          <div class="flex flex-row items-center gap-6 pt-2">
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="!h-[20px] !w-[20px] rounded-full border border-solid border-black/25 hover:cursor-pointer"
+              ></div>
+              <label
+                for="stage-2"
+                class="text-md mb-0 font-normal !text-black dark:text-gray-300"
+                >Yes</label
+              >
+            </div>
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="!h-[20px] !w-[20px] rounded-full border border-solid border-black/25 hover:cursor-pointer"
+              ></div>
+              <label
+                for="stage-1"
+                class="text-md mb-0 font-normal !text-black dark:text-gray-300"
+                >No</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="revenue" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="revenue"><span>Do you have revenue?</span></label>
+        <div
+          id="revenue"
+          class="q mb-8 flex flex-1 flex-row items-center gap-4"
+        >
+          <div class="flex flex-row items-center gap-6 pt-2">
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="!h-[20px] !w-[20px] rounded-full border border-solid border-black/25 hover:cursor-pointer"
+              ></div>
+              <label
+                for="revenue-yes"
+                class="text-md mb-0 font-normal !text-black dark:text-gray-300"
+                >Yes</label
+              >
+            </div>
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="!h-[20px] !w-[20px] rounded-full border border-solid border-black/25 hover:cursor-pointer"
+              ></div>
+              <label
+                for="revenue-no"
+                class="text-md mb-0 font-normal !text-black dark:text-gray-300"
+                >No</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="since" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="since"
+          ><span
+            >If you are applying with the same idea as a previous batch, did
+            anything change? If you applied with a different idea, why did you
+            pivot and what did you learn from the last idea?</span
+          ></label
+        ><textarea
+          name="since"
+          class="w-full"
+          data-dashlane-rid="371bf93feb458ca5"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+      <div id="acc" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="acc"
+          ><span
+            >If you have already participated or committed to participate in an
+            incubator, "accelerator" or "pre-accelerator" program, please tell
+            us about it.</span
+          ></label
+        ><textarea
+          name="acc"
+          class="w-full"
+          data-dashlane-rid="6ffcd672ccb39c5c"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+    </div>
+    <div id="f_idea" class="mb-16">
+      <div
+        class="mb-10 border border-l-0 border-r-0 border-t-0 border-solid border-gray-300 text-[24px] font-bold tracking-tight"
+      >
+        Idea
+      </div>
+      <div id="exp" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="exp"
+          ><span
+            >Why did you pick this idea to work on? Do you have domain expertise
+            in this area? How do you know people need what you're making?</span
+          ></label
+        ><textarea
+          name="exp"
+          class="w-full"
+          data-dashlane-rid="e3733c1009b2d3ee"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+      <div id="get" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="get"
+          ><span
+            >Who are your competitors? What do you understand about your
+            business that they don't?</span
+          ></label
+        ><textarea
+          name="get"
+          class="w-full"
+          data-dashlane-rid="ff4715fc9ab729b7"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+      <div id="money" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class="mb-0.5" for="money"
+          ><span
+            >How do or will you make money? How much could you make?</span
+          ></label
+        >
+        <p class="!mb-[10px]">
+          (We realize you can't know precisely, but give your best estimate)
+        </p>
+        <textarea
+          name="money"
+          class="w-full"
+          data-dashlane-rid="a52db1245ff08504"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+      <div id="category" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="category"
+          ><span>Which category best applies to your company?</span></label
+        ><select
+          class="min-w-[80px] py-[9.5px] w-fit"
+          data-dashlane-rid="7f1579b04e43767c"
+          data-dashlane-classification="other"
+        >
+          <option value=""></option>
+          <option value="Adtech">Adtech</option>
+          <option value="Aerospace">Aerospace</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Analytics">Analytics</option>
+          <option value="B2B SaaS">B2B SaaS</option>
+          <option value="Biotech">Biotech</option>
+          <option value="Climate">Climate</option>
+          <option value="Community">Community</option>
+          <option value="Construction">Construction</option>
+          <option value="Continuing Education">Continuing Education</option>
+          <option value="Crypto / Blockchain">Crypto / Blockchain</option>
+          <option value="Developer Tools">Developer Tools</option>
+          <option value="K-12">K-12</option>
+          <option value="Energy">Energy</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Financial Services">Financial Services</option>
+          <option value="Fitness">Fitness</option>
+          <option value="Food/Beverage">Food/Beverage</option>
+          <option value="Freight">Freight</option>
+          <option value="Gaming">Gaming</option>
+          <option value="Government">Government</option>
+          <option value="Hard Tech">Hard Tech</option>
+          <option value="Hardware">Hardware</option>
+          <option value="Healthcare">Healthcare</option>
+          <option value="Insurance">Insurance</option>
+          <option value="Language Learning">Language Learning</option>
+          <option value="Lending/Loan Management">
+            Lending/Loan Management
+          </option>
+          <option value="Marketplace">Marketplace</option>
+          <option value="Media">Media</option>
+          <option value="Medical Devices">Medical Devices</option>
+          <option value="Mental Health">Mental Health</option>
+          <option value="Personal Finance">Personal Finance</option>
+          <option value="Real Estate">Real Estate</option>
+          <option value="Retail">Retail</option>
+          <option value="Recruiting">Recruiting</option>
+          <option value="Robotics">Robotics</option>
+          <option value="Sales Enablement">Sales Enablement</option>
+          <option value="Security">Security</option>
+          <option value="Transportation">Transportation</option>
+          <option value="Travel/Tourism">Travel/Tourism</option>
+          <option value="Virtual Reality / AR">Virtual Reality / AR</option>
+          <option value="Wellness">Wellness</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div id="ideas" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="ideas"
+          ><span
+            >If you had any other ideas you considered applying with, please
+            list them. One may be something we've been waiting for. Often when
+            we fund people it's to do something they list here and not in the
+            main application.</span
+          ></label
+        ><textarea
+          name="ideas"
+          class="w-full"
+          data-dashlane-rid="5d5da4a835e42340"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+    </div>
+    <div id="f_equity" class="mb-16">
+      <div
+        class="mb-10 border border-l-0 border-r-0 border-t-0 border-solid border-gray-300 text-[24px] font-bold tracking-tight"
+      >
+        Equity
+      </div>
+      <div id="incyet" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class="mb-0.5" for="incyet"
+          ><span>Have you formed ANY legal entity yet?</span></label
+        >
+        <p class="!mb-[10px]">
+          This may be in the US, in your home country or in another country.
+        </p>
+        <div id="incyet" class="q mb-8 flex flex-1 flex-row items-center gap-4">
+          <div class="flex flex-row items-center gap-6 pt-2">
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="!h-[20px] !w-[20px] rounded-full border border-solid border-black/25 hover:cursor-pointer"
+              ></div>
+              <label
+                for="incyet-yes"
+                class="text-md mb-0 font-normal !text-black dark:text-gray-300"
+                >Yes</label
+              >
+            </div>
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="!h-[20px] !w-[20px] rounded-full border border-solid border-black/25 hover:cursor-pointer"
+              ></div>
+              <label
+                for="incyet-no"
+                class="text-md mb-0 font-normal !text-black dark:text-gray-300"
+                >No</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="investyet" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="investyet"
+          ><span>Have you taken any investment yet?</span></label
+        >
+        <div
+          id="investyet"
+          class="q mb-8 flex flex-1 flex-row items-center gap-4"
+        >
+          <div class="flex flex-row items-center gap-6 pt-2">
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="!h-[20px] !w-[20px] rounded-full border border-solid border-black/25 hover:cursor-pointer"
+              ></div>
+              <label
+                for="investyet-yes"
+                class="text-md mb-0 font-normal !text-black dark:text-gray-300"
+                >Yes</label
+              >
+            </div>
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="!h-[20px] !w-[20px] rounded-full border border-solid border-black/25 hover:cursor-pointer"
+              ></div>
+              <label
+                for="investyet-no"
+                class="text-md mb-0 font-normal !text-black dark:text-gray-300"
+                >No</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="currentlyraising" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="currentlyraising"
+          ><span>Are you currently fundraising?</span></label
+        >
+        <div
+          id="currentlyraising"
+          class="q mb-8 flex flex-1 flex-row items-center gap-4"
+        >
+          <div class="flex flex-row items-center gap-6 pt-2">
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="!h-[20px] !w-[20px] rounded-full border border-solid border-black/25 hover:cursor-pointer"
+              ></div>
+              <label
+                for="currentlyraising-yes"
+                class="text-md mb-0 font-normal !text-black dark:text-gray-300"
+                >Yes</label
+              >
+            </div>
+            <div class="flex flex-row items-center gap-3">
+              <div
+                class="!h-[20px] !w-[20px] rounded-full border border-solid border-black/25 hover:cursor-pointer"
+              ></div>
+              <label
+                for="currentlyraising-no"
+                class="text-md mb-0 font-normal !text-black dark:text-gray-300"
+                >No</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="f_curious" class="mb-16">
+      <div
+        class="mb-10 border border-l-0 border-r-0 border-t-0 border-solid border-gray-300 text-[24px] font-bold tracking-tight"
+      >
+        Curious
+      </div>
+      <div id="whyapply" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="whyapply"
+          ><span
+            >What convinced you to apply to Y Combinator? Did someone encourage
+            you to apply? Have you been to any YC events?</span
+          ></label
+        ><textarea
+          name="whyapply"
+          class="w-full"
+          data-dashlane-rid="2597c6164a450d94"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+      <div id="howhear" class="q mb-8 w-full flex-1 md:w-auto">
+        <label class=" " for="howhear"
+          ><span>How did you hear about Y Combinator?</span></label
+        ><textarea
+          name="howhear"
+          class="w-full"
+          data-dashlane-rid="6b8da5ae6011bbe8"
+          data-dashlane-classification="other"
+        ></textarea>
+      </div>
+    </div>
+    <div
+      class="error-summary border-negative bg-pink rounded-xl border border-solid p-8"
+    >
+      <div>
+        <span class="material-icons-outlined text-negative text-md">error</span
+        ><a
+          href="#name"
+          class="text-negative !border-none font-bold hover:!underline"
+          >Company name is required</a
+        >
+      </div>
+      <div>
+        <span class="material-icons-outlined text-negative text-md">error</span
+        ><a
+          href="#describe"
+          class="text-negative !border-none font-bold hover:!underline"
+          >Company description is required</a
+        >
+      </div>
+      <div>
+        <span class="material-icons-outlined text-negative text-md">error</span
+        ><a
+          href="#videoS3Key"
+          class="text-negative !border-none font-bold hover:!underline"
+          >Founder video is required</a
+        >
+      </div>
+      <div id="no-bio">
+        <span class="material-icons-outlined text-negative text-[16px]"
+          >error</span
+        ><strong class="text-negative"
+          >A completed profile is required to submit. Please complete your
+          profile
+          <a href="/bio/edit" target="_blank" class="text-negative underline"
+            >here</a
+          >. If the profiles are complete but are flagged as incomplete, refresh
+          the page to load the latest information.</strong
+        >
+      </div>
+    </div>
+    <div class="founder-warn my-8">
+      After submitting your application, you will be able to edit only certain
+      sections: founder profiles, founder video, demo video, progress, and
+      fundraising.
+    </div>
+    <div class="my-8 flex items-center justify-between">
+      <button
+        class="orange-button-outlined flex items-center"
+        type="button"
+        data-dashlane-label="true"
+        data-dashlane-rid="48a6ea6539103cf0"
+        data-dashlane-classification="action"
+      >
+        <span class="material-symbols-outlined mr-1 text-sm">chevron_left</span>
+        Back
+      </button>
+      <div class="flex flex-row gap-4">
+        <button
+          class="orange-button-outlined"
+          type="button"
+          data-dashlane-label="true"
+          data-dashlane-rid="dd4ad919e3815d83"
+          data-dashlane-classification="action"
+        >
+          Save for later</button
+        ><button
+          type="submit"
+          class="orange-button-disabled"
+          disabled=""
+          data-dashlane-label="true"
+          data-dashlane-rid="4f67c79758721180"
+          data-dashlane-classification="action"
+        >
+          Submit application
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

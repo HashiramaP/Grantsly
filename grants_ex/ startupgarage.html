@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Application Form</title>
+</head>
+<body>
+    <h1>Startup Application Form</h1>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="companyName">Company Name:</label><br>
+        <input type="text" id="companyName" name="companyName"><br><br>
+
+        <label for="websiteSocials">Website/Socials:</label><br>
+        <input type="text" id="websiteSocials" name="websiteSocials"><br><br>
+
+        <h2>1. Briefly describe the problem you are trying to solve.</h2>
+        <textarea id="problemDescription" name="problemDescription" rows="4" cols="50"></textarea><br><br>
+
+        <h2>2. Briefly describe the solution to the problem stated above. What is your business model?</h2>
+        <textarea id="solutionDescription" name="solutionDescription" rows="4" cols="50"></textarea><br><br>
+
+        <h2>3. What have you done to validate that there is a problem in the market and that your solution is the right one for this problem?</h2>
+        <textarea id="validationDescription" name="validationDescription" rows="4" cols="50"></textarea><br><br>
+
+        <h2>4. What have you and your team done to prove early product market fit?</h2>
+        <textarea id="marketFitDescription" name="marketFitDescription" rows="4" cols="50"></textarea><br><br>
+
+        <h2>5. List and describe at least three customer / user groups your solution is targeting? What validation have you done for these segments and what have you learned that demonstrates you are solving a real problem in the market?</h2>
+        <textarea id="customerGroups" name="customerGroups" rows="4" cols="50"></textarea><br><br>
+
+        <h2>6. Who are your main competitors?</h2>
+        <textarea id="competitors" name="competitors" rows="4" cols="50"></textarea><br><br>
+
+        <h2>7. Have you received funding or revenue from any sources for your startup?</h2>
+        <input type="checkbox" id="personalMoney" name="fundingSource" value="Personal Money">
+        <label for="personalMoney">Personal Money</label><br>
+        <input type="checkbox" id="friendsFamily" name="fundingSource" value="Friends and Family">
+        <label for="friendsFamily">Friends and Family</label><br>
+        <input type="checkbox" id="grants" name="fundingSource" value="Grants">
+        <label for="grants">Grants</label><br>
+        <input type="checkbox" id="researchFunds" name="fundingSource" value="Research Funds">
+        <label for="researchFunds">Research Funds</label><br>
+        <input type="checkbox" id="angelInvestment" name="fundingSource" value="Angel Investment">
+        <label for="angelInvestment">Angel Investment</label><br>
+        <input type="checkbox" id="ventureCapital" name="fundingSource" value="Venture Capital Money">
+        <label for="ventureCapital">Venture Capital Money</label><br>
+        <input type="checkbox" id="sales" name="fundingSource" value="Sales">
+        <label for="sales">Sales</label><br><br>
+
+        <h2>8. What stage is your product in development?</h2>
+        <select id="productStage" name="productStage">
+            <option value="Prototype Designed">Prototype Designed</option>
+            <option value="Prototype Built">Prototype Built</option>
+            <option value="Prototype Tested by Team">Prototype Tested by Team</option>
+            <option value="Prototype Tested by End-User">Prototype Tested by End-User</option>
+            <option value="Product Ready for Sale">Product Ready for Sale</option>
+            <option value="Full Product with Sales">Full Product with Sales</option>
+        </select><br><br>
+
+        <h2>9. How long until your product is on the market?</h2>
+        <select id="timeToMarket" name="timeToMarket">
+            <option value="It’s on the market">It’s on the market</option>
+            <option value="0-3 months">0-3 months</option>
+            <option value="4-6 months">4-6 months</option>
+            <option value="7-12 months">7-12 months</option>
+            <option value="+ 1 Year">+ 1 Year</option>
+        </select><br><br>
+
+        <h2>10. What needs to take place for your product to get to market?</h2>
+        <textarea id="marketRequirements" name="marketRequirements" rows="4" cols="50"></textarea><br><br>
+
+        <h2>11. Who is on the team? What is everyone’s role and what are the strengths?</h2>
+        <textarea id="teamDescription" name="teamDescription" rows="4" cols="50"></textarea><br><br>
+
+        <h2>12. Where do you feel are gaps on the team, if any?</h2>
+        <textarea id="teamGaps" name="teamGaps" rows="4" cols="50"></textarea><br><br>
+
+        <h2>13. What is your go-to-market strategy? Describe what you are doing to attract customers/users/investors/partners to your business.</h2>
+        <textarea id="goToMarketStrategy" name="goToMarketStrategy" rows="4" cols="50"></textarea><br><br>
+
+        <h2>14. What is your current north star metric? This means, what are you currently working toward? What actions are you taking over the next three months to achieve that?</h2>
+        <textarea id="northStarMetric" name="northStarMetric" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
