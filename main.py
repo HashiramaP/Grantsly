@@ -1,33 +1,32 @@
+import json
 import os
 from openai import OpenAI
 
 client = OpenAI()
 
-# Directory containing example HTML files
-grants_ex_dir = "grants_ex"
+# Load the mock startup data from JSON
+with open("mockScenario/mockStartup.json", "r", encoding="utf-8") as file:
+    mock_startup_data = json.load(file)
 
-# Read all HTML files from the directory
-examples = []
-for filename in os.listdir(grants_ex_dir):
-    if filename.endswith(".html"):  # Ensure only HTML files are read
-        with open(os.path.join(grants_ex_dir, filename), "r", encoding="utf-8") as file:
-            examples.append({"role": "system", "content": f"Example from {filename}:\n{file.read()}"})
+# Convert JSON data into a readable format for OpenAI
+startup_info = "\n".join([f"{key}: {value}" for key, value in mock_startup_data.items()])
 
-# Define the conversation with examples
-messages = [
-    {"role": "system", "content": "You work at a startup and your job is to fill up grant applications for your company."},
-    *examples,  # Unpack the list of examples into the messages
-    {
-        "role": "user",
-        "content": "What are the most common questions asked in grant applications?"
-    }
-]
-
-# Send the request to OpenAI
-completion = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=messages
-)
-
-# Print the model's response
-print(completion.choices[0].message.content)
+# Start an interactive Q&A loop
+print("Ask any question about the startup. Type 'exit' to quit.")
+while True:
+    user_question = input("You: ")
+    if user_question.lower() == "exit":
+        break
+    
+    messages = [
+        {"role": "system", "content": "You are a representative of a startup. Answer questions based on the provided company information."},
+        {"role": "system", "content": f"Here is the startup's information:\n{startup_info}"},
+        {"role": "user", "content": user_question}
+    ]
+    
+    completion = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=messages
+    )
+    
+    print("AI:", completion.choices[0].message.content)
